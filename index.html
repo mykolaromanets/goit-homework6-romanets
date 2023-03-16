@@ -435,13 +435,67 @@
     </footer>
     <div class="backdrop is-hidden" data-modal>
       <div class="modal-page">
-        <button type="button" data-modal-close>
-          <a href="#" class="modal-close-icon">
+        <button class="modal-close-btn" type="button" data-modal-close>
+          <a href="" class="modal-close-icon">
             <svg class="close-icon">
               <use href="./images/close-icon.svg#icon-close-black"></use>
             </svg>
           </a>
         </button>
+        <p class="modal-title">Leave your contacts and we will call you back</p>
+        <form class="modal-form">
+          <label class="modal-field"
+            ><span class="modal-field-text">Name</span>
+            <span class="input-wrap">
+              <input class="modal-input" type="text" name="user-name" />
+              <svg class="modal-input-icon" width="12" height="12">
+                <use href="./images/symbol-defs.svg#icon-User"></use>
+              </svg>
+            </span>
+          </label>
+          <label class="modal-field"
+            ><span class="modal-field-text">Phone</span>
+            <span class="input-wrap">
+              <input class="modal-input" type="text" name="user-phone" />
+              <svg class="modal-input-icon" width="12" height="12">
+                <use href="./images/symbol-defs.svg#icon-Phone"></use>
+              </svg>
+            </span>
+          </label>
+          <label class="modal-field"
+            ><span class="modal-field-text">Email</span>
+            <span class="input-wrap">
+              <input class="modal-input" type="text" name="user-email" />
+              <svg class="modal-input-icon" width="12" height="12">
+                <use href="./images/symbol-defs.svg#icon-Mail"></use>
+              </svg>
+            </span>
+          </label>
+          <label class="modal-text-area" for="user-commnet">Comment </label>
+          <textarea
+            class="modal-commnet"
+            name="user-comment"
+            id="user-comment"
+            placeholder="Text input"
+          ></textarea>
+          <input
+            class="input-check visually-hidden"
+            id="input-check"
+            name="user-check"
+            type="checkbox"
+            value="true"
+          />
+          <label class="check-text" for="input-check">
+            <span>
+              <svg class="check-icon" width="10" height="8">
+                <use href="./images/symbol-defs.svg#icon-accept"></use>
+              </svg>
+            </span>
+            I accept the terms and conditions of the
+            <a href=""> Privacy Policy</a>
+          </label>
+          <button type="submit" class="finish-modal-btn">Send</button>
+        </form>
       </div>
     </div>
     <script src="./js/modal.js"></script>
