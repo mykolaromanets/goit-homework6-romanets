@@ -431,6 +431,27 @@
             </li>
           </ul>
         </div>
+        <div class="footer-form">
+          <form class="footer-modal-form">
+            <p class="footer-modal-form-text">Subscribe</p>
+            <div class="footer-modal-block">
+              <label class="modal-field">
+                <input
+                  class="footer-input"
+                  type="text"
+                  name="user-email"
+                  placeholder="E-mail"
+                />
+              </label>
+              <button type="submit" class="footer-form-btn">
+                Subscribe
+                <svg class="send-icon">
+                  <use href="./images/symbol-defs.svg#icon-send"></use>
+                </svg>
+              </button>
+            </div>
+          </form>
+        </div>
       </div>
     </footer>
     <div class="backdrop is-hidden" data-modal>
@@ -444,8 +465,8 @@
         </button>
         <p class="modal-title">Leave your contacts and we will call you back</p>
         <form class="modal-form">
-          <label class="modal-field"
-            ><span class="modal-field-text">Name</span>
+          <label class="modal-field">
+            <span class="modal-field-text">Name</span>
             <span class="input-wrap">
               <input class="modal-input" type="text" name="user-name" />
               <svg class="modal-input-icon" width="12" height="12">
@@ -471,9 +492,9 @@
               </svg>
             </span>
           </label>
-          <label class="modal-text-area" for="user-commnet">Comment </label>
+          <label class="modal-text-area" for="user-comment">Comment </label>
           <textarea
-            class="modal-commnet"
+            class="modal-comment"
             name="user-comment"
             id="user-comment"
             placeholder="Text input"
@@ -486,13 +507,15 @@
             value="true"
           />
           <label class="check-text" for="input-check">
-            <span>
+            <span class="check-box">
               <svg class="check-icon" width="10" height="8">
                 <use href="./images/symbol-defs.svg#icon-accept"></use>
               </svg>
             </span>
-            I accept the terms and conditions of the
-            <a href=""> Privacy Policy</a>
+            <span
+              >I accept the terms and conditions of the
+              <a class="privacy-policy" href="">Privacy Policy</a>
+            </span>
           </label>
           <button type="submit" class="finish-modal-btn">Send</button>
         </form>
